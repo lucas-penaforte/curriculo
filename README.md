@@ -1,2 +1,0 @@
-# curriculo
-portifolio profissional

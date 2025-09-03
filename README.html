@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Primeiro Emprego</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        .cyan-text {
+            color: #00FFFF;
+        }
+        .cyan-border {
+            border-color: #00FFFF;
+        }
+        .skill-bar {
+            background-color: #00FFFF;
+            height: 10px;
+            border-radius: 5px;
+            transition: width 0.5s ease;
+        }
+        .skill-container {
+            width: 100%;
+            background-color: #333333;
+            border-radius: 5px;
+        }
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen py-10 px-5">
+    <div class="max-w-4xl w-full bg-gray-900 rounded-lg shadow-lg p-8 cyan-border border-4 container">
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <img src=https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-78a8-622f-9104-cfa4ecd91389/raw?se=2025-09-03T04%3A52%3A54Z&sp=r&sv=2024-08-04&sr=b&scid=a65b416b-fc69-56db-80df-a709a6cb49c9&skoid=c953efd6-2ae8-41b4-a6d6-34b1475ac07c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-03T03%3A47%3A34Z&ske=2025-09-04T03%3A47%3A34Z&sks=b&skv=2024-08-04&sig=GZK463wwPlhUpxDShsTdOXdoea8Ewm1uOMTcGojNhxk%3D alt="Fotografia profissional de um jovem profissional com traje formal, fundo neutro, iluminação suave destacando sorriso confiante e postura ereta" class="w-35 h-40 rounded-full mx-auto mb-4 hover-effect">
+            <h1 class="text-4xl font-bold cyan-text">Lucas Penaforte</h1>
+            <p class="text-xl text-gray-300">Desenvolvedor Frontend Iniciante | Entusiasta de Tecnologia</p>
+            <div class="mt-4">
+                <p class="text-gray-400">📧 Email: lucaspenaforte11@gmail.com | 📞 Telefone: (81) 8261-2289 | 📍 Localização: Paulista, PE</p>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 cyan-text border-b cyan-border pb-2">Sobre Mim</h2>
+            <p class="text-gray-300 leading-relaxed">
+                Sou um estudante de Analise e desenvolvimento de sistemas, desenvolvidor de web e design. Busco minha primeira oportunidade para aplicar meus conhecimentos em HTML, CSS, JavaScript e frameworks modernos. Tenho experiência em projetos pessoais e estou ansioso para contribuir com uma equipe dinâmica.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 cyan-text border-b cyan-border pb-2">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="text-lg cyan-text mb-2">HTML</h3>
+                    <div class="skill-container">
+                        <div class="skill-bar" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg cyan-text mb-2">CSS</h3>
+                    <div class="skill-container">
+                        <div class="skill-bar" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg cyan-text mb-2">JavaScript</h3>
+                    <div class="skill-container">
+                        <div class="skill-bar" style="width: 40%;"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg cyan-text mb-2">Git</h3>
+                    <div class="skill-container">
+                        <div class="skill-bar" style="width: 55%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg cyan-text mb-2">Trabalho em Equipe</h3>
+                    <div class="skill-container">
+                        <div class="skill-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 cyan-text border-b cyan-border pb-2">Formação Acadêmica</h2>
+            <div class="mb-4">
+                <h3 class="text-xl cyan-text">segundo periodo em Analise e desnvolvimento de sistemas</h3>
+                <p class="text-gray-400">Uninassau Paulista </p>
+                <p class="text-gray-300 mt-2">Focado em desenvolvimento de software, algoritmos e design de interfaces. Participei de projetos em grupo para criação de aplicações web.</p>
+            </div>
+           
+        </section>
+
+        <!-- Experience/Projects Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 cyan-text border-b cyan-border pb-2">Experiência e Projetos</h2>
+            
+            <div class="mb-4">
+                <h3 class="text-xl cyan-text">Projeto Pessoal: Portfólio Web</h3>
+                <p class="text-gray-400">Confira no GitHub</p>
+                <p class="text-gray-300 mt-2">Desenvolvi um portfólio em HTML e CSS. Incluiu seções para skills, projetos e contato. Demonstrou habilidades em design e implementação.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer class="text-center mt-8">
+            <h2 class="text-2xl font-semibold mb-4 cyan-text">Contato</h2>
+            <p class="text-gray-300">Estou aberto a oportunidades! Entre em contato para discutir como posso contribuir para sua equipe.</p>
+            <p class="text-gray-400 mt-2">LinkedIn: www.linkedin.com/in/lucas-penaforte-988021353 | GitHub: https://github.com/lucas-penaforte</p>
+        </footer>
+    </div>
+</body>
+</html>
